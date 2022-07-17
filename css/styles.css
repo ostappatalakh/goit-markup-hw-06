@@ -708,8 +708,25 @@ body {
     display: inline-flex;
 }
 
+.footer-subscription-btn {
+    position: relative;
+    display: inline-flex;
+    align-content: flex-start;
+    padding: 10px 29px;
+
+}
+
 .footer-subscription-btn::after {
-    background-image: url();
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
