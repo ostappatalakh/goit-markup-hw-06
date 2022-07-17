@@ -394,13 +394,22 @@
                     </ul>
                 </div>
             </div>
+            <div class="right-container">
+                <p class="join">Подпишитесь на рассылку</p>
+                <form class="footer-subscription">
+                    <label class="footer-subscription-label">
+                        <input class="footer-subscription-email" type="email" name="user-email-footer" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="btn-hero footer-subscription-btn">Подписаться</button>
+                </form>
+            </div>
         </div>
     </footer>
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="close-modal" type="button" data-modal-close>
-            <svg class="icon-modal" width="30" height="30" aria-label="закрыть окно">
+            <svg class="icon-modal" width="11" height="11" aria-label="закрыть окно">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button>
@@ -441,15 +450,14 @@
                     <Label class="form-field-label" for="user-comments">Комментарий</Label>
                     <textarea class="form-field-textarea" id="user-comments" rows="5" name="user-comments" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="form-field">
-                    <Label class="form-field-label" for="user-checkbox"></Label>
-                    <input class="form-field-checkbox" id="user-checkbox" type="checkbox" name="user-checkbox">
-                    <span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
+                <div class="form-field checkbox-field">
+                    <Label class="form-field-label checkbox-label">
+                        <input class="form-field-checkbox" type="checkbox" name="user-checkbox">
+                        <span class="checkbox-icon"></span>
+                        <p class="checkbox-descrition">Соглашаюсь с рассылкой и принимаю</p> <a class="privacy" href="#"> Условия договора</a>
+                    </Label>
                 </div>
-                
-
-
-
+                <button type="submit" class="btn-hero form-field-btn">Отправить</button>
             </form>
         </div>
     </div>
